@@ -6,10 +6,133 @@
     <link rel="stylesheet" href="styles/styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
-    
+    <section id="menu">
+        <div class="logo">
+            <img src="assets/small_long_logo.png" alt="logo">
+            <h2>EasyGo</h2>
+        </div>
 
-    <script src="js/main.js"></script>
+        <div class="items">
+            <li><i class="fas fa-tachometer-alt"></i><a href="#"></a>Dashboard</li>
+            <li><i class="fas fa-plane-departure"></i><a href="#"></a>Trips</li>
+            <li><i class="fas fa-chart-pie"></i><a href="#"></a>Financials</li>
+            <li><i class="fas fa-bell"></i><a href="#"></a>Notifications</li>
+        </div>
+    </section>
+
+    <section id="interface">
+        <div class="navigation">
+            <div class="n1">
+                <div>
+                    <i id="menu-btn" class="fas fa-bars"></i>
+                </div>
+                <div class="search">
+                    <!-- <i class="far fa-search"></i> -->
+                    <input type="text" placeholder="Search...">
+                </div>
+            </div>
+
+            <div class="profile">
+                <i class="fas fa-bell"></i>
+                <img src="assets/account_image.png" alt="profile">
+            </div>
+        </div>
+
+
+        <h3 class="i-name">All-time Statistics</h3>
+        <div class="values">
+            <div class="val-box">
+                <i class="fas fa-comment"></i>
+                <div>
+                    <h3>4</h3>
+                    <span>Published Trips</span>
+                </div>
+            </div>
+            <div class="val-box">
+                <i class="fas fa-users"></i>
+                <div>
+                    <h3>1</h3>
+                    <span>Trip Bookings</span>
+                </div>
+            </div>
+            <div class="val-box">
+                <i class="fas fa-thumbs-up"></i>
+                <div>
+                    <h3>GHS 0</h3>
+                    <span>Balance</span>
+                </div>
+            </div>
+            <div class="val-box">
+                <i class="fas fa-dollar-sign"></i>
+                <div>
+                    <h3>GHS 840.00</h3>
+                    <span>Total Revenue</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="values">
+            <div class="val-box">
+                <div class="date">
+                    <input type="date">
+                </div>
+            </div>
+            <div class="val-box">
+                <i class="fas fa-users"></i>
+                <div>
+                    <h3>1</h3>
+                    <span>Trip Bookings</span>
+                </div>
+            </div>
+            <div class="val-box">
+                <i class="fas fa-thumbs-up"></i>
+                <div>
+                    <h3>GHS 0</h3>
+                    <span>Balance</span>
+                </div>
+            </div>
+            <div class="val-box">
+                <i class="fas fa-dollar-sign"></i>
+                <div>
+                    <h3>GHS 840.00</h3>
+                    <span>Total Revenue</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="board">
+            <h2>Recent Orders</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Product Name</th>
+                        <th>Product Number</th>
+                        <th>Payment</th>
+                        <th>Status</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Foldable Mini Drone</td>
+                        <td>83734</td>
+                        <td>Due</td>
+                        <td class="warning">Pending</td>
+                        <td class="primary">Details</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <script>
+        $('#menu-btn').click(function(){
+            $('#menu').toggleClass('active');
+        })
+    </script>
 </body>
 </html>
