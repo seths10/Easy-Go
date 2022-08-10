@@ -1,214 +1,240 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
-      rel="stylesheet">
-    <link rel="stylesheet" href="styles/styles.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-commerce Dashboard</title>
-</head>
-<body>
-    <div class="container">
-        <aside>
-            <div class="top">
-                <div class="logo">
-                    <img src="assets/small_long_logo.png" alt="logo">
-                    <h2><span class="danger">CONCEPT</span></h2>
-                </div>
-                <div class="close" id="close-btn">
-                    <span class="material-icons-sharp">close</span>
-                </div>
-            </div>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<link
+			href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="styles/styles.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>E-commerce Dashboard</title>
+	</head>
+	<body>
+		<div class="container">
+			<aside>
+				<div class="top">
+					<div class="logo">
+						<img src="assets/small_long_logo.png" alt="logo" />
+						<h2><span class="danger">CONCEPT</span></h2>
+					</div>
+					<div class="close" id="close-btn">
+						<span class="material-icons-sharp">close</span>
+					</div>
+				</div>
 
-            <div class="sidebar">
-                <a href="#">
-                    <span class="material-icons-sharp">grid_view</span>
-                    <h3>Dashboard</h3>
-                </a>
-                <a href="#">
-                    <span class="material-icons-sharp">grid_view</span>
-                    <h3>Dashboard</h3>
-                </a>
-                <a href="#">
-                    <span class="material-icons-sharp">grid_view</span>
-                    <h3>Dashboard</h3>
-                </a>
-                <a href="#">
-                    <span class="material-icons-sharp">grid_view</span>
-                    <h3>Dashboard</h3>
-                </a>
-                <a href="#">
-                    <span class="material-icons-sharp">grid_view</span>
-                    <h3>Dashboard</h3>
-                </a>
-                <a href="#">
-                    <span class="material-icons-sharp">grid_view</span>
-                    <h3>Dashboard</h3>
-                </a>
-                <a href="#">
-                    <span class="material-icons-sharp">grid_view</span>
-                    <h3>Dashboard</h3>
-                </a>
-                <a href="#" class="active">
-                    <span class="material-icons-sharp">grid_view</span>
-                    <h3>Dashboard</h3>
-                </a>
-                <a href="#">
-                    <span class="material-icons-sharp">grid_view</span>
-                    <h3>Dashboard</h3>
-                </a>
-                <a href="#">
-                    <span class="material-icons-sharp">grid_view</span>
-                    <h3>Dashboard</h3>
-                </a>
-            </div>
-        </aside>
+				<div class="sidebar">
+					<a href="#">
+						<span class="material-icons-sharp">grid_view</span>
+						<h3>Dashboard</h3>
+					</a>
+					<a href="#">
+						<span class="material-icons-sharp">grid_view</span>
+						<h3>UI Elements</h3>
+					</a>
+					<a href="#">
+						<span class="material-icons-sharp">bar_chart</span>
+						<h3>Chart</h3>
+					</a>
+					<a href="#">
+						<span class="material-icons-sharp">edit_note</span>
+						<h3>Forms</h3>
+					</a>
+					<a href="#">
+						<span class="material-icons-sharp">table_chart</span>
+						<h3>Tables</h3>
+					</a>
+					<a href="#">
+						<span class="material-icons-sharp">article</span>
+						<h3>Pages</h3>
+					</a>
+					<a href="#">
+						<span class="material-icons-sharp">apps</span>
+						<h3>Apps</h3>
+					</a>
+					<a href="#">
+						<span class="material-icons-sharp">room</span>
+						<h3>Maps</h3>
+					</a>
+					<a href="#">
+						<span class="material-icons-sharp">menu</span>
+						<h3>Menu Level</h3>
+					</a>
+				</div>
+			</aside>
 
-        <main>
-            <h1>Dashboard</h1>
+			<main>
+				<h1>Dashboard</h1>
 
-            <div class="date">
-                <input type="date">
-            </div>
+				<div class="insights">
+					<div class="sales">
+						<div class="middle">
+							<div class="left">
+								<h3>Total Revenue</h3>
+								<h1>$12,099</h1>
+							</div>
+							<div class="progress">
+								<canvas id="myChart" height="100" width="100"></canvas>
+							</div>
+						</div>
+						<small class="text-muted">Last 24 hours</small>
+					</div>
+					<div class="expenses">
+						<div class="middle">
+							<div class="left">
+								<h3>Affiliate Revenue</h3>
+								<h1>$12,099</h1>
+							</div>
+							<div class="progress">
+								<canvas id="myChart1" height="100" width="100"></canvas>
+							</div>
+						</div>
+						<small class="text-muted">Last 24 hours</small>
+					</div>
+					<div class="income">
+						<div class="middle">
+							<div class="left">
+								<h3>Refunds</h3>
+								<h1>0.00</h1>
+							</div>
+							<div class="progress">
+								<canvas id="myChart2" height="100" width="100"></canvas>
+							</div>
+						</div>
+						<small class="text-muted">Last 24 hours</small>
+					</div>
+				</div>
 
-            <div class="insights">
-                <div class="sales">
-                    <span class="material-icons-sharp">analytics</span>
-                    <div class="middle">
-                        <div class="left">
-                            <h3>Total Sales</h3>
-                            <h1>$25,024</h1>
-                        </div>
-                        <div class="progress">
-                            <svg>
-                                <circle cx="38" cy="38" r="36"></circle>
-                            </svg>
-                            <div class="number">
-                                <p>81%</p>
-                            </div>
-                        </div>
-                    </div>
-                    <small class="text-muted">Last 24 hours</small>
-                </div>
-                <div class="expenses">
-                    <span class="material-icons-sharp">bar_chart</span>
-                    <div class="middle">
-                        <div class="left">
-                            <h3>Total Sales</h3>
-                            <h1>$14,160</h1>
-                        </div>
-                        <div class="progress">
-                            <svg>
-                                <circle cx="38" cy="38" r="36"></circle>
-                            </svg>
-                            <div class="number">
-                                <p>62%</p>
-                            </div>
-                        </div>
-                    </div>
-                    <small class="text-muted">Last 24 hours</small>
-                </div>
-                <div class="income">
-                    <span class="material-icons-sharp">stacked_line_chart</span>
-                    <div class="middle">
-                        <div class="left">
-                            <h3>Total Sales</h3>
-                            <h1>$10,864</h1>
-                        </div>
-                        <div class="progress">
-                            <svg>
-                                <circle cx="38" cy="38" r="36"></circle>
-                            </svg>
-                            <div class="number">
-                                <p>44%</p>
-                            </div>
-                        </div>
-                    </div>
-                    <small class="text-muted">Last 24 hours</small>
-                </div>
-            </div>
+				<div style="margin-bottom: 50px" class="recent-orders">
+					<h2>Recent Orders</h2>
+					<table>
+						<thead>
+							<tr>
+								<th>Product Name</th>
+								<th>Product Number</th>
+								<th>Payment</th>
+								<th>Status</th>
+								<th></th>
+							</tr>
+						</thead>
+						<tbody></tbody>
+					</table>
+					<a href="#">Show All</a>
+				</div>
 
+				<div class="insight">
+					<div
+						style="margin-bottom: 50px; background: var(--color-white)"
+						class="income"
+					>
+						<div class="middle">
+							<div class="left">
+								<h3>Product Category</h3>
+							</div>
+							<div class="progress">
+								<canvas id="pieChart" height="100" width="100"></canvas>
+							</div>
+						</div>
+					</div>
+					<div
+						style="margin-bottom: 50px; background: var(--color-white)"
+						class="income"
+					>
+						<div class="middle">
+							<div class="left">
+								<h3>Product Sales</h3>
+							</div>
+							<div class="progress">
+								<canvas id="barChart" height="100" width="100"></canvas>
+							</div>
+						</div>
+					</div>
+				</div>
+			</main>
 
-            <div class="recent-orders">
-                <h2>Recent Orders</h2>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Product Name</th>
-                            <th>Product Number</th>
-                            <th>Payment</th>
-                            <th>Status</th>
-                            <th></th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                    </tbody>
-                </table>
-                <a href="#">Show All</a>
-            </div>
-        </main>
+			<!-- RIGHT -->
+			<div class="right">
+				<div class="top">
+					<button id="menu-btn">
+						<span class="material-icons-sharp">menu</span>
+					</button>
+					<div class="theme-toggler">
+						<span class="material-icons-sharp active">light_mode</span>
+						<span class="material-icons-sharp">dark_mode</span>
+					</div>
+					<div class="profile">
+						<div class="info">
+							<p>Hey, <b>Seth</b></p>
+							<small class="text_muted">Admin</small>
+						</div>
+						<div class="profile-photo">
+							<img src="assets/images/profile-4.jpg" alt="profile" />
+						</div>
+					</div>
+				</div>
 
+				<div class="recent-updates">
+					<div class="insights">
+						<div style="margin-bottom: 50px" class="income">
+							<div class="middle">
+								<div class="left">
+									<h3>Avg. Revenue Per User</h3>
+									<h1>$28,000</h1>
+								</div>
+								<div class="progress">
+									<canvas id="myChart3" height="100" width="100"></canvas>
+								</div>
+							</div>
+							<small class="text-muted">Last 24 hours</small>
+						</div>
+					</div>
+					<div style="background: var(--color-white)" class="income">
+						<div class="middle">
+							<div class="left">
+								<h3>Customer Aquisition</h3>
+							</div>
+							<div class="progress">
+								<canvas id="myChart4" height="120" width="100"></canvas>
+							</div>
+						</div>
+					</div>
+					<!-- </div> -->
+					<div style="margin-bottom: 50px" class="recent-orders">
+						<h2>Top Performing Campaigns</h2>
+						<table>
+							<thead>
+								<tr>
+									<th>Campaign</th>
+									<th>Visits</th>
+									<th>Revenue</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Campaign#1</td>
+									<td>29478</td>
+									<td>$7756</td>
+								</tr>
+								<tr>
+									<td>Campaign#2</td>
+									<td>29422</td>
+									<td>$1244</td>
+								</tr>
+								<tr>
+									<td>Campaign#3</td>
+									<td>90385</td>
+									<td>$7282</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
 
-        <!-- RIGHT -->
-        <div class="right">
-            <div class="top">
-                <button id="menu-btn">
-                    <span class="material-icons-sharp">menu</span>
-                </button>
-                <div class="theme-toggler">
-                    <span class="material-icons-sharp active">light_mode</span>
-                    <span class="material-icons-sharp">dark_mode</span>
-                </div>
-                <div class="profile">
-                    <div class="info">
-                        <p>Hey, <b>Seth</b></p>
-                        <small class="text_muted">Admin</small>
-                    </div>
-                    <div class="profile-photo">
-                        <img src="assets/images/profile-4.jpg" alt="profile">
-                    </div>
-                </div>
-            </div>
-            
-
-            <div class="recent-updates">
-                <h2>Recent Updates</h2>
-                <div class="updates">
-                    <div class="update">
-                        <div class="profile-photo">
-                            <img src="assets/images/profile-1.jpg" alt="pic">
-                        </div>
-                        <div class="message">
-                            <p><b>Mike Tyson</b> recieved his order of Night liion tech GPS drone</p>
-                            <small class="text-muted">2 Minutes Ago</small>
-                        </div>
-                    </div>
-                    <div class="update">
-                        <div class="profile-photo">
-                            <img src="assets/images/profile-3.jpg" alt="pic">
-                        </div>
-                        <div class="message">
-                            <p><b>Mike Tyson</b> recieved his order of Night liion tech GPS drone</p>
-                            <small class="text-muted">2 Minutes Ago</small>
-                        </div>
-                    </div>
-                    <div class="update">
-                        <div class="profile-photo">
-                            <img src="assets/images/profile-3.jpg" alt="pic">
-                        </div>
-                        <div class="message">
-                            <p><b>Mike Tyson</b> recieved his order of Night liion tech GPS drone</p>
-                            <small class="text-muted">2 Minutes Ago</small>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <script src="js/order.js"></script>
-    <script src="js/main.js"></script>
-</body>
+		<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+		<script src="js/order.js"></script>
+		<script src="js/main.js"></script>
+	</body>
 </html>
