@@ -1,131 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="styles/styles.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Dashboard</title>
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-</head>
-<body>
-    <section id="menu">
-        <div class="logo">
-            <img src="assets/small_long_logo.png" alt="logo">
-            <h2>EasyGo</h2>
-        </div>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<link rel="stylesheet" href="styles/styles.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Admin Dashboard</title>
+		<link
+			rel="stylesheet"
+			href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+		/>
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	</head>
+	<body>
+		<section id="menu">
+			<div class="logo">
+				<img src="assets/small_long_logo.png" alt="logo" />
+				<h2>EasyGo</h2>
+			</div>
 
-        <div class="items">
-            <li><i class="fas fa-tachometer-alt"></i><a href="#"></a>Dashboard</li>
-            <li><i class="fas fa-plane-departure"></i><a href="#"></a>Trips</li>
-            <li><i class="fas fa-chart-pie"></i><a href="#"></a>Financials</li>
-            <li><i class="fas fa-bell"></i><a href="#"></a>Notifications</li>
-        </div>
-    </section>
+			<div class="items">
+				<li><i class="fas fa-tachometer-alt"></i><a href="#"></a>Dashboard</li>
+				<li><i class="fas fa-plane-departure"></i><a href="#"></a>Trips</li>
+				<li><i class="fas fa-chart-pie"></i><a href="#"></a>Financials</li>
+				<li><i class="fas fa-bell"></i><a href="#"></a>Notifications</li>
+			</div>
+		</section>
 
-    <section id="interface">
-        <div class="navigation">
-            <div class="n1">
-                <div>
-                    <i id="menu-btn" class="fas fa-bars"></i>
-                </div>
-                <div class="search">
-                    <!-- <i class="far fa-search"></i> -->
-                    <input type="text" placeholder="Search...">
-                </div>
-            </div>
+		<section id="interface">
+			<div class="navigation">
+				<div class="n1">
+					<div>
+						<i id="menu-btn" class="fas fa-bars"></i>
+					</div>
+					<div class="search">
+						<!-- <i class="far fa-search"></i> -->
+						<input type="text" placeholder="Search..." />
+					</div>
+				</div>
 
-            <div class="profile">
-                <i class="fas fa-bell"></i>
-                <img src="assets/account_image.png" alt="profile">
-            </div>
-        </div>
+				<div class="profile">
+					<i class="fas fa-bell"></i>
+					<img src="assets/account_image.png" alt="profile" />
+				</div>
+			</div>
 
+			<h3 class="i-name">All-time Statistics</h3>
+			<div class="values">
+				<div class="val-box">
+					<i class="fas fa-comment"></i>
+					<div>
+						<h3>4</h3>
+						<span>Published Trips</span>
+					</div>
+				</div>
+				<div class="val-box">
+					<i class="fas fa-users"></i>
+					<div>
+						<h3>1</h3>
+						<span>Trip Bookings</span>
+					</div>
+				</div>
+				<div class="val-box">
+					<i class="fas fa-thumbs-up"></i>
+					<div>
+						<h3>GHS 0</h3>
+						<span>Balance</span>
+					</div>
+				</div>
+				<div class="val-box">
+					<i class="fas fa-dollar-sign"></i>
+					<div>
+						<h3>GHS 840.00</h3>
+						<span>Total Revenue</span>
+					</div>
+				</div>
+			</div>
 
-        <h3 class="i-name">All-time Statistics</h3>
-        <div class="values">
-            <div class="val-box">
-                <i class="fas fa-comment"></i>
-                <div>
-                    <h3>4</h3>
-                    <span>Published Trips</span>
-                </div>
-            </div>
-            <div class="val-box">
-                <i class="fas fa-users"></i>
-                <div>
-                    <h3>1</h3>
-                    <span>Trip Bookings</span>
-                </div>
-            </div>
-            <div class="val-box">
-                <i class="fas fa-thumbs-up"></i>
-                <div>
-                    <h3>GHS 0</h3>
-                    <span>Balance</span>
-                </div>
-            </div>
-            <div class="val-box">
-                <i class="fas fa-dollar-sign"></i>
-                <div>
-                    <h3>GHS 840.00</h3>
-                    <span>Total Revenue</span>
-                </div>
-            </div>
-        </div>
+			<div class="values">
+				<div class="vally-box">
+					<div>
+						<div class="up">
+							<div class="upper">
+								<p>Next tip</p>
+								<p>1 Seat Booked</p>
+							</div>
+							<div class="downer">
+								<h1>08 Sep 2022</h1>
+							</div>
+						</div>
+						<div class="down">
+							<p>Experience Accra</p>
+						</div>
+					</div>
+				</div>
+				<div class="values">
+					<div class="board2">
+						<h2>Trips Performance (COMING SOON)</h2>
+						<table>
+							<tbody>
+								<tr>
+									<td>Google Chrome</td>
+									<td>12%</td>
+								</tr>
+							</tbody>
+							<tbody>
+								<tr>
+									<td>Safari</td>
+									<td>14%</td>
+								</tr>
+								<tr>
+									<td>Mozilla Firefox</td>
+									<td>20%</td>
+								</tr>
+								<tr>
+									<td>Brave</td>
+									<td>10%</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div class="val-box">
+					<div>
+						<h3>Select Date:</h3>
+						<div class="date">
+							<input type="date" value="2020-06-01" />
+						</div>
+					</div>
+				</div>
+			</div>
 
-        <div class="values">
-            <div class="val-box">
-                <div class="date">
-                    <input type="date">
-                </div>
-            </div>
-            <div class="val-box">
-                <i class="fas fa-users"></i>
-                <div>
-                    <h3>1</h3>
-                    <span>Trip Bookings</span>
-                </div>
-            </div>
-            <div class="val-box">
-                <i class="fas fa-thumbs-up"></i>
-                <div>
-                    <h3>GHS 0</h3>
-                    <span>Balance</span>
-                </div>
-            </div>
-        </div>
+			<div class="values">
+				<div class="board">
+					<h2>Recent Bookings</h2>
+					<table>
+						<thead>
+							<tr>
+								<th>#</th>
+								<th>Trip Name</th>
+								<th>Trip Start Date</th>
+								<th>User Name</th>
+								<th>Number of seats</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td>Accra-KTown</td>
+								<td>01-12-2022</td>
+								<td>Seth Addo</td>
+								<td>45</td>
+							</tr>
+							<tr>
+								<td>3</td>
+								<td>Accra-KTown</td>
+								<td>01-12-2022</td>
+								<td>Seth Addo</td>
+								<td>64</td>
+							</tr>
+							<tr>
+								<td>5</td>
+								<td>Accra-KTown</td>
+								<td>01-12-2022</td>
+								<td>Seth Addo</td>
+								<td>23</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div>
+					<h1 style="margin-left: -30px; margin-top: 0px" class="i-name">
+						Trip Locations
+					</h1>
+					<div style="height: 200px" class="val-box">
+						<!-- <i style="width: 50px; height: 50px" class="fas fa-star"></i> -->
+					</div>
+				</div>
+			</div>
+		</section>
 
-        <div class="board">
-            <h2>Recent Orders</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Product Name</th>
-                        <th>Product Number</th>
-                        <th>Payment</th>
-                        <th>Status</th>
-                        <th></th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Foldable Mini Drone</td>
-                        <td>83734</td>
-                        <td>Due</td>
-                        <td class="warning">Pending</td>
-                        <td class="primary">Details</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </section>
-
-    <script>
-        $('#menu-btn').click(function(){
-            $('#menu').toggleClass('active');
-        })
-    </script>
-</body>
+		<script>
+			$('#menu-btn').click(function () {
+				$('#menu').toggleClass('active');
+			});
+		</script>
+	</body>
 </html>
