@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&dispaly=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
 
 :root {
     --color-primary: #7380ec;
@@ -57,7 +58,7 @@ html {
 body {
     width: 100vw;
     height: 100vh;
-    font-family: poppins, sans-serif;
+    font-family: 'Roboto',sans-serif;
     font-size: 0.88rem;
     background: var(--color-background);
     user-select: none;
@@ -309,6 +310,10 @@ main .recent-orders {
 main .recent-orders h2{
     margin-bottom: 0.8rem;
 }
+
+/* main .recent-orders {
+    margin-left: 2rem;
+} */
 
 main .recent-orders table {
     background: var(--color-white);
@@ -627,8 +632,16 @@ main .recent-orders a {
         left: 66%;
     }
 
+    .right .insights {
+        grid-template-columns: none;
+    }
+
     .right .profile .info {
         display: none;
+    }
+
+    .right .insights .progress #myChart4{
+        height: 10px;
     }
 
     .right .top button {
